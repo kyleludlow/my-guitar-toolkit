@@ -3,6 +3,7 @@
 
   angular.module('app', [
     'app.core',
-    'app.index'
+    'app.index',
+    'app.header'
   ])
 })()
