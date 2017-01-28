@@ -11,6 +11,7 @@ Sequelize is being used to generate SQL queries and manipulate table data. I've 
 This app is formatted using [StandardJS](https://github.com/feross/standard) style guidelines.
 
 ## Dependencies
+```
 * express
 * body-parser
 * underscore
@@ -20,5 +21,6 @@ This app is formatted using [StandardJS](https://github.com/feross/standard) sty
 * bcrypt
 * crypto-js
 * jsonwebtoken
+```
 
 You can learn more about me and my code at [kyleludlow.io](http://www.kyleludlow.io). I'm available for hire!
