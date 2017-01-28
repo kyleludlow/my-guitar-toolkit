@@ -1,11 +1,41 @@
 @import '../../styles/global-variables.style.scss';
 
-.index-div {
-  height: 500px;
-  background-color: $test-color;
+#index-view {
+  padding: 50px 0;
 
-  p {
-    color: pink;
-    font-size: 48px;
+  .title {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-weight: 100;
+    padding-bottom: 30px;
+    position: relative;
+    color: #bdc3c7;
+  }
+
+  .description {
+    text-align: center;
+  }
+  .btn {
+    border: none;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    text-transform: uppercase;
+    border-radius: 0;
+  }
+
+  .btn-common {
+    background: $temp-layout-color;
+    color: #fff;
+
+    &:hover {
+      background: #e74c3c;
+      color: #fff;
+    }
   }
 }
