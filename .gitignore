@@ -1,4 +1,24 @@
+# --------------------
+# Node Files
+# --------------------
 node_modules
 data
+
+
+# --------------------
+# Bower Files
+# --------------------
 bower_components/
+
+
+# --------------------
+# Global Compiled Files
+# --------------------
+client/styles/compiled
+client/scripts/compiled
+
+
+# --------------------
+# Experimental Files
+# --------------------
 playground

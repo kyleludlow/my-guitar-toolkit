@@ -1,0 +1,11 @@
+@import '../../styles/global-variables.style.scss';
+
+.index-div {
+  height: 500px;
+  background-color: $test-color;
+
+  p {
+    color: pink;
+    font-size: 48px;
+  }
+}
