@@ -13,7 +13,7 @@ This app is formatted using [StandardJS](https://github.com/feross/standard) sty
 ## Dependencies
 ```
 bower.json:
-
+{
   "dependencies": {
     "angular": "1.5.8",
     "angular-sanitize": "1.5.8",
@@ -26,20 +26,48 @@ bower.json:
     "toastr": "^2.1.3",
     "bootstrap": "^3.3.7",
     "angular-bootstrap": "^2.4.0"
+  },
+  "resolutions": {
+    "angular": "1.5.8",
+    "jquery": "^3.1.1"
   }
-
-backend:
-* express
-* body-parser
-* underscore
-* pg
-* sequelize
-* sqlite3
-* bcrypt
-* crypto-js
-* jsonwebtoken
-
-dev:
+}
+```
+```
+package.json:
+{
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.16.0",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.2.1",
+    "pg": "^6.1.2",
+    "sequelize": "^3.29.0",
+    "sqlite3": "^3.1.8",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-bytediff": "^1.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1",
+    "http-server": "^0.9.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.8",
+    "protractor": "^4.0.9",
+    "standard": "^8.6.0"
+  }
+}
 ```
 
 You can learn more about me and my code at [kyleludlow.io](http://www.kyleludlow.io). I'm available for hire!
