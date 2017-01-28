@@ -4,6 +4,7 @@
   angular.module('app', [
     'app.core',
     'app.index',
-    'app.header'
+    'app.header',
+    'app.user'
   ])
 })()

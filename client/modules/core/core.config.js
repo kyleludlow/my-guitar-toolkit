@@ -5,6 +5,7 @@
 
   core.config(toastrConfig)
   core.constant('toastr', toastr)
+  core.constant('_', _)
 
   toastrConfig.$inject = ['toastr']
   /* @ngInject */

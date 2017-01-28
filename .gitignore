@@ -8,7 +8,7 @@ data
 # --------------------
 # Bower Files
 # --------------------
-bower_components/
+client/bower_components/
 
 
 # --------------------
