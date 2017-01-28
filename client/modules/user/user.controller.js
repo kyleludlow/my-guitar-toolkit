@@ -13,10 +13,11 @@
     vm.loginCred = {}
 
     vm.login = function () {
-      logger.warning(vm)
+      logger.log(vm.loginCred)
+      UserFactory.login(vm)
     }
     vm.signup = function () {
-      logger.warning(vm.loginCred)
+      logger.log(vm.loginCred)
       UserFactory.signup(vm)
     }
 
