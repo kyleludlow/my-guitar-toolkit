@@ -12,6 +12,23 @@ This app is formatted using [StandardJS](https://github.com/feross/standard) sty
 
 ## Dependencies
 ```
+bower.json:
+
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-sanitize": "1.5.8",
+    "angular-cookies": "1.5.8",
+    "angular-animate": "1.5.8",
+    "angular-jwt": "^0.0.9",
+    "angular-mocks": "1.5.8",
+    "angular-resource": "1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "toastr": "^2.1.3",
+    "bootstrap": "^3.3.7",
+    "angular-bootstrap": "^2.4.0"
+  }
+
+backend:
 * express
 * body-parser
 * underscore
@@ -21,6 +38,8 @@ This app is formatted using [StandardJS](https://github.com/feross/standard) sty
 * bcrypt
 * crypto-js
 * jsonwebtoken
+
+dev:
 ```
 
 You can learn more about me and my code at [kyleludlow.io](http://www.kyleludlow.io). I'm available for hire!
