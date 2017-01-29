@@ -30,6 +30,15 @@
           controller: 'ToolController',
           controllerAs: 'vm',
         }
+      },
+      {
+        state: 'view',
+        config: {
+          url: '/view/:id',
+          templateUrl: 'modules/tool/view.view.html',
+          controller: 'ToolController',
+          controllerAs: 'vm',
+        }
       }
     ]
   }
