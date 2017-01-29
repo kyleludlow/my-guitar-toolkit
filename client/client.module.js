@@ -5,6 +5,7 @@
     'app.core',
     'app.index',
     'app.header',
-    'app.user'
+    'app.user',
+    'app.tool'
   ])
 })()

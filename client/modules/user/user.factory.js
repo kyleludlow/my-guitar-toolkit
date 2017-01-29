@@ -21,7 +21,12 @@
         email: vm.loginCred.email,
         password: vm.loginCred.password
       }).then(function (success) {
-        logger.log(success)
+        if (success.data) {
+          localStorage.setItem('Auth', success.data.token)
+          logger.success(success)
+          //$state.go('create')
+          $location.url('/tool/create')
+        }
       }, function (err) {
         logger.error(err)
       })

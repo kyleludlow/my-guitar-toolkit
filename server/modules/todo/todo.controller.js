@@ -47,7 +47,6 @@ exports.getTodoById = function (req, res) {
 
 exports.postTodo = function (req, res) {
   var body = _.pick(req.body, 'description', 'completed')
-
   db.todo.create(body).then(function (todo) {
     req.user.addTodo(todo).then(function () {
       return todo.reload()
