@@ -16,11 +16,19 @@
     activate()
 
     vm.create = function () {
-
       var tool = new ToolFactory(vm.tool)
       tool.$save(function (response) {
         logger.info(response)
-        //$location.url('/tool/list')
+        // $location.url('/tool/list')
+      }, function (error) {
+        logger.error(error.data.msg || error.data.message, error, 'Tool')
+      })
+    }
+
+    vm.list = function () {
+      ToolFactory.get(function (success) {
+        logger.log(success)
+        vm.tools = success.todos
       }, function (error) {
         logger.error(error.data.msg || error.data.message, error, 'Tool')
       })

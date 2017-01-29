@@ -20,7 +20,7 @@ exports.getTodos = function (req, res) {
   }
 
   db.todo.findAll({where: where}).then(function (todos) {
-    res.json(todos)
+    res.json({todos: todos})
   }, function (err) {
     res.status(500).send()
   })

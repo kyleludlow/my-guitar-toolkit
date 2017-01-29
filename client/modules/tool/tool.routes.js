@@ -21,6 +21,15 @@
           controller: 'ToolController',
           controllerAs: 'vm',
         }
+      },
+      {
+        state: 'list',
+        config: {
+          url: '/tool/list',
+          templateUrl: 'modules/tool/list.view.html',
+          controller: 'ToolController',
+          controllerAs: 'vm',
+        }
       }
     ]
   }

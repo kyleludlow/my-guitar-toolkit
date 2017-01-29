@@ -1,0 +1,23 @@
+<div class="container" ng-init="vm.list()">
+  <div class="row">
+      <div class="center-block text-center">
+        <h1 class="tool-title">Tools</h1>
+
+        <p class="lead tool-description">
+          <h3>Total: <span class="badge badge-info"> {{vm.tools.length}} </span></h3>
+        </p>
+      </div>
+  </div>
+  <div class="row">
+    <div class="center-block">
+
+      <div class="tool-post" ng-repeat="tool in vm.tools">
+        <a href="#"><h2>{{tool.description}}</h2></a>
+        <p class="blog-post-meta">
+        </p>
+
+        <div>{{tool.completed}}</div>
+      </div>
+    </div>
+  </div>
+</div>
