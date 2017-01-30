@@ -1,14 +1,17 @@
 #My Guitar Toolkit
 
-My Guitar Toolkit is full-stack application that allows users to sign up, add tools and videos for guitar practice, and then filter those tools and videos for the kind of practice session they want to engage in.
+My Guitar Toolkit is full-stack application that allows users to sign up, add "tools" and videos for guitar practice, and then filter those tools and videos for the kind of practice session they want to engage in.
 
 The stack includes PostgreSQL, AngularJS, Express, and Node. Everything is made from scratch.   
 
-This backend is a Node server with an SQL database. A todo list is used as an example, but the model can easily be changed to emulate your app's needs.
+This app is formatted using [John Papa's Angular 1](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) style guide as well as [StandardJS](https://github.com/feross/standard).
+
+## Backend
+This backend is a Node server using Express with an SQL database.
 
 Sequelize is being used to generate SQL queries and manipulate table data. I've chosen to use Sequelize because it is well-documented, easy to use, has few bugs, and is actively used by many developers as seen on npm. For scalability, raw SQL queries can later be used instead, but for small to mid-sized apps, Sequelize works smoothly. The database has been configured so that during development, an sqlite db is used, and when deployed to production, PostgreSQL is used.
 
-This app is formatted using [StandardJS](https://github.com/feross/standard) style guidelines.
+
 
 ## Dependencies
 ```
