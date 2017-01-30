@@ -28,7 +28,7 @@
     vm.list = function () {
       ToolFactory.get(function (success) {
         logger.log(success)
-        vm.tools = success.todos
+        vm.tools = success.tools
       }, function (error) {
         logger.error(error.data.msg || error.data.message, error, 'Tool')
       })
@@ -41,7 +41,7 @@
         vm.tool = success
 
         logger.log(success)
-        vm.tool.href = $sce.trustAsResourceUrl('//www.youtube.com/embed/' + vm.tool.description + '?rel=0')
+        vm.tool.href = $sce.trustAsResourceUrl('//www.youtube.com/embed/' + vm.tool.videoID + '?rel=0')
       }, function (error) {
         logger.error(error.data.msg || error.data.message, error, 'Tool')
       })

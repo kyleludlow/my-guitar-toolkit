@@ -8,7 +8,7 @@
   ToolFactory.$inject = ['$resource']
   /* @ngInject */
   function ToolFactory ($resource) {
-    return $resource('/todos/:id', {
+    return $resource('/tools/:id', {
       id: '@id'
     }, {
       update: {

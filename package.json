@@ -24,7 +24,8 @@
     "pg": "^6.1.2",
     "sequelize": "^3.29.0",
     "sqlite3": "^3.1.8",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "underscore.string": "^3.3.4"
   },
   "devDependencies": {
     "bower": "^1.7.7",

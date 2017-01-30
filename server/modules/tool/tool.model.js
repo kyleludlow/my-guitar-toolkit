@@ -1,10 +1,10 @@
 module.exports = function (sequelize, DataTypes) {
-  return sequelize.define('todo', {
-    description: {
+  return sequelize.define('tool', {
+    videoID: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [1, 250]
+        len: [1, 25]
       }
     },
     completed: {

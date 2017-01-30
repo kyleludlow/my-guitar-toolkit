@@ -1,5 +1,5 @@
 var db = require('../../db.js')
-var _ = require('lodash')
+var _ = require('underscore')
 
 exports.postUser = function (req, res) {
   var body = _.pick(req.body, 'email', 'password')

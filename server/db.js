@@ -9,20 +9,20 @@ if (env === 'production') {
 } else {
   sequelize = new Sequelize(undefined, undefined, undefined, {
     'dialect': 'sqlite',
-    'storage': __dirname + '/data/dev-todo-api.sqlite'
+    'storage': __dirname + '/data/dev-tool-api.sqlite'
   })
 }
 
 var db = {}
 
-db.todo = sequelize.import(__dirname + '/modules/todo/todo.model.js')
+db.tool = sequelize.import(__dirname + '/modules/tool/tool.model.js')
 db.user = sequelize.import(__dirname + '/modules/users/users.model.js')
 db.token = sequelize.import(__dirname + '/modules/token/token.model.js')
 
 db.sequelize = sequelize
 db.Sequelize = Sequelize
 
-db.todo.belongsTo(db.user)
-db.user.hasMany(db.todo)
+db.tool.belongsTo(db.user)
+db.user.hasMany(db.tool)
 
 module.exports = db
