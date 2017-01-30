@@ -1,0 +1,29 @@
+<section id="search" ng-init="vm.selectVideo()">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <form name="searchForm" id="search-form" ng-submit="vm.searchVideos(vm.video.searchQuery)" novalidate>
+          <div class="form-group">
+                  <input type="text" name="search-query" id="search-query" ng-model="vm.video.searchQuery" placeholder="Search Videos" autofocus="" class="form-control" required>
+          </div>
+          <div class="form-group">
+                  <button type="submit" class="btn btn-primary">Add Tool</button>
+          </div>
+      </form>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe ng-src="{{vm.video.href}}" frameborder="0"
+                allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <ul class="list-group">
+        <button type="button" class="list-group-item" ng-repeat="video in vm.video.searchVideos"
+          ng-click="vm.selectVideo(video.id.videoId)">
+          <span class="badge">add to toolkit</span>
+          {{video.snippet.title}}
+        </button>
+      </ul>
+    </div>
+  </div>
+</section>

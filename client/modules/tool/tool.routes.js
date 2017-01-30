@@ -39,6 +39,15 @@
           controller: 'ToolController',
           controllerAs: 'vm',
         }
+      },
+      {
+        state: 'search',
+        config: {
+          url: '/tool/search',
+          templateUrl: 'modules/tool/search.view.html',
+          controller: 'ToolController',
+          controllerAs: 'vm'
+        }
       }
     ]
   }
