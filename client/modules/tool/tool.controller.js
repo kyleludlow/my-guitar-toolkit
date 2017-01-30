@@ -15,8 +15,10 @@
 
     activate()
 
-    vm.create = function () {
-      var tool = new ToolFactory(vm.tool)
+    vm.create = function (toolParams) {
+
+      var tool = toolParams ? new ToolFactory(toolParams) : new ToolFactory(vm.tool)
+      logger.log(tool)
       tool.$save(function (response) {
         logger.info(response)
         //$location.url('/tool/list')

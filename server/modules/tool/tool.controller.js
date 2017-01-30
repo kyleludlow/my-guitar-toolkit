@@ -50,7 +50,8 @@ exports.getToolById = function (req, res) {
 
 // POST
 exports.postTool = function (req, res) {
-  var body = _.pick(req.body, 'videoID', 'completed')
+  var body = _.pick(req.body, 'title', 'videoID', 'completed')
+  body.title = _str.prune(body.title, 15)
   var test = _str.include(body.videoID, 'http')
   if (test) {
     var hrefString = body.videoID
