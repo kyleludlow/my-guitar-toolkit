@@ -11,7 +11,11 @@
             <form name="toolForm" id="tool-form" method="POST" ng-submit="vm.create()" novalidate>
                 <div class="form-group">
                     <label for="name" class="control-label">Name</label>
-                        <input type="text" name="name" id="name" ng-model="vm.tool.videoID" placeholder="Tool name" autofocus="" class="form-control" required>
+                        <input type="text" name="name" id="name" ng-model="vm.tool.title" placeholder="Tool name" autofocus="" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="name" class="control-label">Name</label>
+                        <input type="text" name="youtube-id" id="youtube-id" ng-model="vm.tool.videoID" placeholder="Youtube link or ID" autofocus="" class="form-control" required>
                 </div>
                 <div class="form-group">
                         <button type="submit" class="btn btn-primary">Add Tool</button>
