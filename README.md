@@ -6,6 +6,8 @@ The stack includes PostgreSQL, AngularJS, Express, and Node. Everything is made 
 
 This app is formatted using [John Papa's Angular 1](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) style guide as well as [StandardJS](https://github.com/feross/standard).
 
+App is still in development.
+
 ## Backend
 This backend is a Node server using Express with an SQL database.
 
