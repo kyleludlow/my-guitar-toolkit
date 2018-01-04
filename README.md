@@ -1,4 +1,4 @@
-#My Guitar Toolkit
+# My Guitar Toolkit
 
 My Guitar Toolkit is full-stack application that allows users to sign up, add "tools" and videos for guitar practice, and then filter those tools and videos for the kind of practice session they want to engage in.
 
